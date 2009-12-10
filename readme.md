@@ -17,7 +17,7 @@ Using Rubeclosures is pretty straightfoward. Just consider the following code...
 	# Pull down up to 10 of the most recent foreclosure listings in your area
     
 	# Get your api_key at foreclosurelistings.com
-    lol = Foreclosures.new("domain", "api_key")
+    lol = Rubeclosures.new("domain", "api_key")
     
 	# Pass in state/area/county, or zipcode (object-ified)
     epic = lol.getRecent({:zipcode => "20910"})
@@ -28,7 +28,7 @@ You can also pass Rubeclosures an existing address to check if it is a foreclosu
 
     require 'rubeclosures'
     
-    lol = Foreclosures.new("domain", "api_key")
+    lol = Rubeclosures.new("domain", "api_key")
     
 	# Check if this is a foreclosure or not (address/city/state as straight up args, non-obj)
     epic = lol.getRecent("12345 Sesame St", "everytown", "CA")

@@ -8,7 +8,7 @@ include REXML
 
 # Author: Ryan McGrath (ryan [at] venodesigns dot net) (@ryanmcgrath on Twitter)
 
-class Foreclosures
+class Rubeclosures
 	def initialize(domain, api_key)
 		@domain = domain
 		@api_key = api_key
